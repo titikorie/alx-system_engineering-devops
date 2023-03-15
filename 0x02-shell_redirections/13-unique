@@ -1,2 +1,2 @@
 #!/bib/bash
-sort | uniq -w
+sort | uniq -u
