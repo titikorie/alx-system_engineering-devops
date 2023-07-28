@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Display process ID and name
 
-pgrep -l "bash"
+4404 bash
+4557 bash
