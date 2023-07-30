@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Print formatted entries in /etc/passwd
-while read entry
+# This script displays specific information about the file /etc/passwd.
+
+input="/etc/passwd"
+while IFS= read -r line
 do
-	echo "$entry" | cut -d ":" -f 1,3,6 
-done < /etc/passwd
+    echo "$line" | cut -d':' --fields=1,3,6
+done < "$input"
