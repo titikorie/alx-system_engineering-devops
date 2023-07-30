@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # This script displays "Hi" in the Nineth line using a while loop
 
-I=0
-while [ $I -lt 10 ]
+count=0
+while [ $count -ne 11 ]
 do
-	echo "best School"
-	if [ $I = 8 ]
-	then
-		echo "Hi"
-	fi
-	I=$((I + 1))
+    if [ $count -eq 9 ]; then
+	echo "Hi"
+    else
+	echo "Best School"
+    fi
+    ((count++))
 done
