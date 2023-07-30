@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
-# This script displays "Hi" in the Nineth line using a while loop
+# This script displays other stuffs in both the fourth and eight lines
 
-I=0
-while [ $I -lt 10 ]
+count=1
+while [ $count -ne 11 ]
 do
-	if [ $I = 3 ]
-	then
-		echo "bad luck"
-	elif [ $I = 7 ]
-	then
-		echo "good luck"
-	else
-		echo "best School"
-	fi
-	I=$((I + 1))
+    if [ $count -eq 4 ]; then
+	echo "bad luck"
+    elif [ $count -eq 8 ]; then
+	echo "good luck"
+    else
+	echo "Best School"
+    fi
+    ((count++))
 done
